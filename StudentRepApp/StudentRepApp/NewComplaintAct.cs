@@ -20,6 +20,7 @@ namespace StudentRepApp
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.NewComplaints);
             // Create your application here
+            
         }
     }
 }

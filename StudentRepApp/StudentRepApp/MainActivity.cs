@@ -16,36 +16,18 @@ namespace StudentRepApp
         {
             base.OnCreate(savedInstanceState);
             // Set our view from the "main" layout resource
-            SetContentView(Resource.Layout.Main);
+            SetContentView(Resource.Layout.LoginPage);
 
-            FindViewById<Button>(Resource.Id.viewcomplaints).Click += ViewComplaintsClick;
-            FindViewById<Button>(Resource.Id.newcomlaints).Click += NewComplaintsClick;
-            FindViewById<Button>(Resource.Id.email).Click += EmailClick;
-            FindViewById<Button>(Resource.Id.termsofservice).Click += TermsClick;
+            FindViewById<Button>(Resource.Id.studlogin).Click += LoginClick;
+           
         }
 
-        void TermsClick(object sender, EventArgs e)
+        void LoginClick(object sender, EventArgs e)
         {
-            var intent = new Intent(this, typeof(TermsOfServiceAct));
+            var intent = new Intent(this, typeof(MainMenuAct));
             StartActivity(intent);
         }
 
-        void EmailClick(object sender, EventArgs e)
-        {
-            var intent = new Intent(this, typeof(EmailComplaintAct));
-            StartActivity(intent);
-        }
-
-        void NewComplaintsClick(object sender, EventArgs e)
-        {
-            var intent = new Intent(this, typeof(NewComplaintAct));
-            StartActivity(intent);
-        }
-
-        void ViewComplaintsClick(object sender, EventArgs e)
-        {
-            var intent = new Intent(this, typeof(ViewComplaintAct));
-            StartActivity(intent);
-        }
+       
     }
 }

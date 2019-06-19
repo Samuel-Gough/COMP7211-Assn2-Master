@@ -11,5 +11,49 @@
 		android:minWidth="25px"
 		android:minHeight="25px"
 		android:id="@+id/textView1" />
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textInputEditText1"
+		android:inputType="none"
+		android:hint="Enter complaint title here"
+		android:maxLines="1"
+		android:minLines="1"
+		android:singleLine="true"
+		android:lines="1" />
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/complaintbody"
+		android:hint="Enter complaint here"
+		android:inputType="textMultiLine"
+		android:isScrollContainer="true"
+		android:verticalScrollbarPosition="right"
+		android:scrollIndicators="right"
+		android:minLines="10"
+		android:textIsSelectable="true"
+		android:editable="false"
+		android:elegantTextHeight="false"
+		android:gravity="top"
+		android:scrollbars="vertical"
+		android:maxLines="10"
+		android:singleLine="false"/>
+	<Button
+		android:text="Submit"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/submitcomplaint"
+		android:layout_marginRight="100px"
+		android:layout_gravity="right"/>
+	<Button
+		android:text="Cancel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/cancelcomplaint"
+		android:onClick="cancelclick"
+		android:contextClickable="false"
+		android:layout_marginLeft="100px"
+		android:layout_gravity="left"
+		android:layout_marginTop="-100px" />
 
 </LinearLayout>

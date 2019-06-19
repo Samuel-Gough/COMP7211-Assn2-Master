@@ -19,8 +19,15 @@ namespace StudentRepApp
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.NewComplaints);
-            // Create your application here
-            
+
+            FindViewById<Button>(Resource.Id.cancelcomplaint).Click += cancelclick;
+            FindViewById<EditText>(Resource.Id.complaintbody);
+
+            void cancelclick(object sender, EventArgs e)
+            {/*
+                complaintbody.text = "";*/
+                Button cancelcomplaint = (Button)sender;
+            }
         }
     }
 }

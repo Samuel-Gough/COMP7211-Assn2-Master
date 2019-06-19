@@ -2561,8 +2561,8 @@ namespace StudentRepApp
 			// aapt resource value: 0x7f08005f
 			public const int image = 2131230815;
 			
-			// aapt resource value: 0x7f08009a
-			public const int imageView1 = 2131230874;
+			// aapt resource value: 0x7f08009b
+			public const int imageView1 = 2131230875;
 			
 			// aapt resource value: 0x7f0800b0
 			public const int info = 2131230896;
@@ -2585,8 +2585,8 @@ namespace StudentRepApp
 			// aapt resource value: 0x7f080018
 			public const int line3 = 2131230744;
 			
-			// aapt resource value: 0x7f08009e
-			public const int linearLayout1 = 2131230878;
+			// aapt resource value: 0x7f080099
+			public const int linearLayout1 = 2131230873;
 			
 			// aapt resource value: 0x7f08001d
 			public const int listMode = 2131230749;
@@ -2594,14 +2594,14 @@ namespace StudentRepApp
 			// aapt resource value: 0x7f080061
 			public const int list_item = 2131230817;
 			
-			// aapt resource value: 0x7f0800b8
-			public const int masked = 2131230904;
+			// aapt resource value: 0x7f0800bb
+			public const int masked = 2131230907;
 			
 			// aapt resource value: 0x7f0800a9
 			public const int media_actions = 2131230889;
 			
-			// aapt resource value: 0x7f0800b6
-			public const int message = 2131230902;
+			// aapt resource value: 0x7f0800b9
+			public const int message = 2131230905;
 			
 			// aapt resource value: 0x7f080031
 			public const int middle = 2131230769;
@@ -2645,8 +2645,8 @@ namespace StudentRepApp
 			// aapt resource value: 0x7f08000b
 			public const int parent_matrix = 2131230731;
 			
-			// aapt resource value: 0x7f08009c
-			public const int password = 2131230876;
+			// aapt resource value: 0x7f08009d
+			public const int password = 2131230877;
 			
 			// aapt resource value: 0x7f08004d
 			public const int pin = 2131230797;
@@ -2774,8 +2774,8 @@ namespace StudentRepApp
 			// aapt resource value: 0x7f0800a8
 			public const int status_bar_latest_event_content = 2131230888;
 			
-			// aapt resource value: 0x7f08009d
-			public const int studlogin = 2131230877;
+			// aapt resource value: 0x7f08009e
+			public const int studlogin = 2131230878;
 			
 			// aapt resource value: 0x7f080076
 			public const int submenuarrow = 2131230838;
@@ -2804,8 +2804,17 @@ namespace StudentRepApp
 			// aapt resource value: 0x7f080069
 			public const int textSpacerNoTitle = 2131230825;
 			
-			// aapt resource value: 0x7f080099
-			public const int textView1 = 2131230873;
+			// aapt resource value: 0x7f08009a
+			public const int textView1 = 2131230874;
+			
+			// aapt resource value: 0x7f0800b6
+			public const int textView2 = 2131230902;
+			
+			// aapt resource value: 0x7f0800b7
+			public const int textView3 = 2131230903;
+			
+			// aapt resource value: 0x7f0800b8
+			public const int textView4 = 2131230904;
 			
 			// aapt resource value: 0x7f080098
 			public const int text_input_password_toggle = 2131230872;
@@ -2861,8 +2870,8 @@ namespace StudentRepApp
 			// aapt resource value: 0x7f080026
 			public const int useLogo = 2131230758;
 			
-			// aapt resource value: 0x7f08009b
-			public const int username = 2131230875;
+			// aapt resource value: 0x7f08009c
+			public const int username = 2131230876;
 			
 			// aapt resource value: 0x7f080016
 			public const int view_offset_helper = 2131230742;
@@ -2870,8 +2879,8 @@ namespace StudentRepApp
 			// aapt resource value: 0x7f0800a0
 			public const int viewcomplaints = 2131230880;
 			
-			// aapt resource value: 0x7f0800b7
-			public const int visible = 2131230903;
+			// aapt resource value: 0x7f0800ba
+			public const int visible = 2131230906;
 			
 			// aapt resource value: 0x7f08003c
 			public const int withText = 2131230780;

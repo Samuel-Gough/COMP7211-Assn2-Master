@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
+	android:weightSum="1"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+	
+	<!-- Toi Ohomai header -->
 	<LinearLayout
 		android:orientation="vertical"
 		android:minWidth="25px"
@@ -15,12 +18,43 @@
 		<include layout="@layout/Header"/>
 	</LinearLayout>
 
-	<TextView
-		android:text="Email Page"
+	<!-- Select email recipient -->
+	<Spinner
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
+		android:id="@+id/contactSpinner"
+		android:contextClickable="false"/>
+	
+	<!-- Message subject/title entry -->
+	<EditText
+		android:hint="Title..."
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/msgSubjectText" />
+
+	<!-- Message content entry -->
+	<ScrollView
 		android:minWidth="25px"
 		android:minHeight="25px"
-		android:id="@+id/textView1" />
+		android:layout_weight="0.9"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/scrollView1" >
+		<EditText
+			android:hint="Message..."
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="#ffffffff"
+			android:id="@+id/msgContentText" />
+	</ScrollView>
+	
+	<!-- Send button -->
+	<Button
+		android:text="Send"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:onClick="SendButtonClicked"
+		android:id="@+id/sendButton" />
 
 </LinearLayout>

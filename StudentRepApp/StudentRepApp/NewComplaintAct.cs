@@ -25,8 +25,11 @@ namespace StudentRepApp
 
             void cancelclick(object sender, EventArgs e)
             {/*
-                complaintbody.text = "";*/
                 Button cancelcomplaint = (Button)sender;
+                AlertDialog.Builder dialog = new AlertDialog.Builder(this);
+                dialog.setMessage("Are you sure you want to cancel? Your post will be deleted.");
+                */
+                
             }
         }
     }

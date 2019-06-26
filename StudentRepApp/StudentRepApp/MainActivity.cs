@@ -7,6 +7,7 @@ using Android.Widget;
 using System.Collections.Generic;
 using Android.Content;
 
+
 namespace StudentRepApp
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]

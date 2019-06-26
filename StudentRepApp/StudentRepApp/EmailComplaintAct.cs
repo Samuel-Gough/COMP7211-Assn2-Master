@@ -11,15 +11,31 @@ using Android.Views;
 using Android.Widget;
 
 using System.Net.Mail;
-//using System.Net.Mime;
+using Newtonsoft.Json;
+using System.Net;
+using System.Threading.Tasks;
+
+// NOTE FOR JACOB : Please change the smtp email address after you've finished with this.
 
 namespace StudentRepApp
 {
+
+    public class Contact
+    {
+        public int      id            { get; set; }
+        public string   name          { get; set; }
+        public string   role          { get; set; }
+        public string   department    { get; set; }
+        public string   emailAddress  { get; set; }
+    }
+
     [Activity(Label = "EmailComplaintAct")]
     public class EmailComplaintAct : Activity
     {
         public List<string> emailTarget = new List<string>();
         public List<string> emailAddress = new List<string>();
+        public static List<Contact> contacts = new List<Contact>();
+
         public int selectionIndex = 0;
         public string msgTitle = "";
         public string msgContent = "";
@@ -28,22 +44,20 @@ namespace StudentRepApp
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.EmailComplaints);
-            // Create your application here
-            
-            // Make fake data for testing
-            emailTarget.Add("Select a contact");
-            emailTarget.Add("Comp6210 : Student Rep");
-            emailTarget.Add("Comp7109 : Student Rep");
-            emailTarget.Add("Comp6109 : Student Rep");
-            emailTarget.Add("Comp7031 : Student Rep");
-            emailTarget.Add("Comp7111 : Student Rep");
 
+            // Add default selection
+            emailTarget.Add("Select a contact");
             emailAddress.Add("NA");
-            emailAddress.Add("joesf.ms@gmail.com");
-            emailAddress.Add("secondPerson@someEmail.com");
-            emailAddress.Add("thirdPerson@someEmail.com");
-            emailAddress.Add("fourthPerson@someEmail.com");
-            emailAddress.Add("fifthPerson@someEmail.com");
+
+            // Load database
+            string json = new WebClient().DownloadString("http://192.168.206.157:5002/api/contact");
+            contacts = JsonConvert.DeserializeObject<List<Contact>>(json);
+
+            // Populate lists
+            foreach (var c in contacts) {
+                emailTarget.Add(c.role);
+                emailAddress.Add(c.emailAddress);
+            }
 
             // Spinner / Drop down menu
             Spinner spinner = FindViewById<Spinner>(Resource.Id.contactSpinner);
@@ -82,36 +96,25 @@ namespace StudentRepApp
                 }
 
                 // Send email if clicked, then return to the main menu
-                if (SendEmail())
-                {
-                    //FinishActivity(0);
+                if (SendEmail()) {
                     Finish();
                 }
-
-                //string toast = "You pressed the button!";
-                //Toast.MakeText(this, toast, ToastLength.Long).Show();
-
             };
-
-
         }
 
         private void SpinnerItemSelected(object sender, AdapterView.ItemSelectedEventArgs e) {
             Spinner spinner = (Spinner)sender;
-            selectionIndex = e.Position;
+            selectionIndex = e.Position;    // Get index into the list of contacts
         }
 
         private bool SendEmail()
         {
-            try
-            {
+            try {
                 MailMessage mail = new MailMessage();
                 SmtpClient smtpServer = new SmtpClient("smtp.gmail.com");
 
                 mail.From = new MailAddress("mxsacnt@gmail.com");
-                //mail.To.Add("joesf.ms@gmail.com");
                 mail.To.Add(emailAddress[selectionIndex]);
-                //mail.Subject = height > width ? pt_msgSubject.Text : ls_msgSubject.Text;
                 mail.Subject = msgTitle;
                 mail.Body = msgContent;
 
@@ -119,24 +122,16 @@ namespace StudentRepApp
                 smtpServer.Host = "smtp.gmail.com";
                 smtpServer.EnableSsl = true;
                 smtpServer.UseDefaultCredentials = false;
-                smtpServer.Credentials = new System.Net.NetworkCredential("mxsacnt@gmail.com", "xx11333377xx");
+                smtpServer.Credentials = new NetworkCredential("mxsacnt@gmail.com", "xx11333377xx");
 
                 smtpServer.Send(mail);
                 return true;
             }
-            catch (Exception ex)
-            {
+            catch (Exception ex) {
                 string failMsg = "Failed to send : " + ex.Message;
                 Toast.MakeText(this, failMsg, ToastLength.Long).Show();
-                //DisplayAlert("Failed", ex.Message, "OK");
                 return false;
             }
-
-
-
-
-
         }
-
     }
 }

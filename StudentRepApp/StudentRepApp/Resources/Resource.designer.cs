@@ -2420,6 +2420,12 @@ namespace StudentRepApp
 			// aapt resource value: 0x7f080044
 			public const int auto = 2131230788;
 			
+			// aapt resource value: 0x7f0800c7
+			public const int backbutton = 2131230919;
+			
+			// aapt resource value: 0x7f0800ce
+			public const int backtomain = 2131230926;
+			
 			// aapt resource value: 0x7f08002f
 			public const int beginning = 2131230767;
 			
@@ -2501,6 +2507,9 @@ namespace StudentRepApp
 			// aapt resource value: 0x7f080020
 			public const int disableHome = 2131230752;
 			
+			// aapt resource value: 0x7f0800c1
+			public const int downVoteTitle = 2131230913;
+			
 			// aapt resource value: 0x7f08007e
 			public const int edit_query = 2131230846;
 			
@@ -2527,6 +2536,15 @@ namespace StudentRepApp
 			
 			// aapt resource value: 0x7f080072
 			public const int expanded_menu = 2131230834;
+			
+			// aapt resource value: 0x7f0800cd
+			public const int feedbackcontent = 2131230925;
+			
+			// aapt resource value: 0x7f0800cc
+			public const int feedbackview = 2131230924;
+			
+			// aapt resource value: 0x7f0800ca
+			public const int feedbaklayout = 2131230922;
 			
 			// aapt resource value: 0x7f080050
 			public const int fill = 2131230800;
@@ -2591,20 +2609,29 @@ namespace StudentRepApp
 			// aapt resource value: 0x7f080099
 			public const int linearLayout1 = 2131230873;
 			
+			// aapt resource value: 0x7f0800bb
+			public const int linearLayout2 = 2131230907;
+			
+			// aapt resource value: 0x7f0800c5
+			public const int linearLayout3 = 2131230917;
+			
 			// aapt resource value: 0x7f08001d
 			public const int listMode = 2131230749;
 			
 			// aapt resource value: 0x7f080061
 			public const int list_item = 2131230817;
 			
-			// aapt resource value: 0x7f0800c0
-			public const int masked = 2131230912;
+			// aapt resource value: 0x7f0800cb
+			public const int loadingtext = 2131230923;
+			
+			// aapt resource value: 0x7f0800d0
+			public const int masked = 2131230928;
 			
 			// aapt resource value: 0x7f0800ae
 			public const int media_actions = 2131230894;
 			
-			// aapt resource value: 0x7f0800be
-			public const int message = 2131230910;
+			// aapt resource value: 0x7f0800c9
+			public const int message = 2131230921;
 			
 			// aapt resource value: 0x7f080031
 			public const int middle = 2131230769;
@@ -2756,6 +2783,12 @@ namespace StudentRepApp
 			// aapt resource value: 0x7f080025
 			public const int showTitle = 2131230757;
 			
+			// aapt resource value: 0x7f0800bd
+			public const int singleviewdescript = 2131230909;
+			
+			// aapt resource value: 0x7f0800bc
+			public const int singleviewheading = 2131230908;
+			
 			// aapt resource value: 0x7f08008b
 			public const int smallLabel = 2131230859;
 			
@@ -2798,8 +2831,20 @@ namespace StudentRepApp
 			// aapt resource value: 0x7f080087
 			public const int submit_area = 2131230855;
 			
+			// aapt resource value: 0x7f0800c4
+			public const int svDownvote = 2131230916;
+			
+			// aapt resource value: 0x7f0800c3
+			public const int svUpvote = 2131230915;
+			
 			// aapt resource value: 0x7f08001f
 			public const int tabMode = 2131230751;
+			
+			// aapt resource value: 0x7f0800be
+			public const int tableLayout1 = 2131230910;
+			
+			// aapt resource value: 0x7f0800bf
+			public const int tableRow1 = 2131230911;
 			
 			// aapt resource value: 0x7f080019
 			public const int tag_transition_group = 2131230745;
@@ -2822,14 +2867,14 @@ namespace StudentRepApp
 			// aapt resource value: 0x7f0800a7
 			public const int textView1 = 2131230887;
 			
-			// aapt resource value: 0x7f0800bb
-			public const int textView2 = 2131230907;
+			// aapt resource value: 0x7f0800c8
+			public const int textView2 = 2131230920;
 			
-			// aapt resource value: 0x7f0800bc
-			public const int textView3 = 2131230908;
+			// aapt resource value: 0x7f0800c2
+			public const int textView3 = 2131230914;
 			
-			// aapt resource value: 0x7f0800bd
-			public const int textView4 = 2131230909;
+			// aapt resource value: 0x7f0800c6
+			public const int textView4 = 2131230918;
 			
 			// aapt resource value: 0x7f080098
 			public const int text_input_password_toggle = 2131230872;
@@ -2882,6 +2927,9 @@ namespace StudentRepApp
 			// aapt resource value: 0x7f080009
 			public const int up = 2131230729;
 			
+			// aapt resource value: 0x7f0800c0
+			public const int upVoteTitle = 2131230912;
+			
 			// aapt resource value: 0x7f080026
 			public const int useLogo = 2131230758;
 			
@@ -2894,8 +2942,8 @@ namespace StudentRepApp
 			// aapt resource value: 0x7f0800a4
 			public const int viewcomplaints = 2131230884;
 			
-			// aapt resource value: 0x7f0800bf
-			public const int visible = 2131230911;
+			// aapt resource value: 0x7f0800cf
+			public const int visible = 2131230927;
 			
 			// aapt resource value: 0x7f08003c
 			public const int withText = 2131230780;
@@ -3149,16 +3197,19 @@ namespace StudentRepApp
 			public const int select_dialog_singlechoice_material = 2130968638;
 			
 			// aapt resource value: 0x7f04003f
-			public const int support_simple_spinner_dropdown_item = 2130968639;
+			public const int SingleFeedbackView = 2130968639;
 			
 			// aapt resource value: 0x7f040040
-			public const int TermsOfService = 2130968640;
+			public const int support_simple_spinner_dropdown_item = 2130968640;
 			
 			// aapt resource value: 0x7f040041
-			public const int tooltip = 2130968641;
+			public const int TermsOfService = 2130968641;
 			
 			// aapt resource value: 0x7f040042
-			public const int ViewComplaints = 2130968642;
+			public const int tooltip = 2130968642;
+			
+			// aapt resource value: 0x7f040043
+			public const int ViewComplaints = 2130968643;
 			
 			static Layout()
 			{

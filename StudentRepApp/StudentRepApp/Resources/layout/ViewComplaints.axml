@@ -3,12 +3,77 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-	<TextView
-		android:text="View Complaints"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
+	
+		<LinearLayout
+		android:orientation="vertical"
 		android:minWidth="25px"
 		android:minHeight="25px"
-		android:id="@+id/textView1" />
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/linearLayout1">
+
+		<include layout="@layout/Header" />
+
+		</LinearLayout>
+	<LinearLayout
+		android:orientation="vertical"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:id="@+id/feedbaklayout"
+		android:layout_weight="1"
+		android:layout_marginLeft="30px"
+		android:layout_marginRight="30px"
+		android:layout_marginTop="30px">
+	<TextView
+		android:text="Loading Please Wait.........."
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/loadingtext"
+		android:visibility="visible"
+		android:gravity="center" />
+		<ScrollView
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/feedbackview">
+			<LinearLayout
+				android:orientation="vertical"
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/feedbackcontent" >
+
+			</LinearLayout>
+
+		</ScrollView>
+
+	</LinearLayout>
+		<LinearLayout
+		android:orientation="vertical"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="0.2"
+		android:id="@+id/linearLayout3"
+		android:gravity="bottom|center">
+		<Button
+			android:text="Back"
+			android:layout_width="200dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/backtomain"
+			android:layout_weight="0"
+			android:backgroundTint="#ff003f47"
+			android:textColor="#ffffffff"
+			android:layout_marginBottom="20px"
+			android:layout_marginTop="20px" />
+		
+	</LinearLayout>
+		
 
 </LinearLayout>

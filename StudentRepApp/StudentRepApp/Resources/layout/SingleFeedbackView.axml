@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+	<LinearLayout
+		android:orientation="vertical"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/linearLayout1">
+		<include
+			layout="@layout/Header" />
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="vertical"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="20px"
+		android:id="@+id/linearLayout2"
+		android:weightSum="1">
+		<TextView
+			android:text="Placeholder Text"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/singleviewheading"
+			android:textSize="50px"
+			android:layout_marginBottom="10px"
+			android:textStyle="bold"
+			android:textColor="#ff000000" />
+		<ScrollView
+			android:minWidth="25px"
+			android:minHeight="120px"
+			android:layout_width="match_parent"
+			android:layout_height="200dp"
+			android:id="@+id/scrollView1"
+			android:layout_weight="0.5"
+			android:scrollIndicators="right"
+			android:scrollbars="vertical">
+			<TextView
+				android:text="Placeholder Text"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/singleviewdescript"
+				android:textSize="40px"
+				android:layout_marginBottom="10px"
+				android:textColor="#ff000000" />
+		</ScrollView>
+	</LinearLayout>
+	<TableLayout
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/tableLayout1">
+		<TableRow
+			android:id="@+id/tableRow1">
+			<TextView
+				android:minWidth="30px"
+				android:minHeight="30px"
+				android:id="@+id/textView1"
+				android:layout_weight="0.25" />
+			<TextView
+				android:minWidth="30px"
+				android:minHeight="30px"
+				android:layout_weight="0.25"
+				android:id="@+id/upVoteTitle"
+				android:text="Agree"
+				android:gravity="center|center_horizontal|center_vertical"
+				android:textColor="#ff25ff00"
+				android:clickable="true" />
+			<TextView
+				android:minWidth="30px"
+				android:minHeight="30px"
+				android:layout_weight="0.25"
+				android:id="@+id/downVoteTitle"
+				android:text="Disagree"
+				android:gravity="center|center_horizontal|center_vertical"
+				android:layout_height="wrap_content"
+				android:textColor="#ffff0000"
+				android:clickable="true" />
+			<TextView
+				android:minWidth="30px"
+				android:minHeight="30px"
+				android:layout_weight="0.25"
+				android:id="@+id/textView3" />
+		</TableRow>
+		<TableRow
+			android:id="@+id/tableRow1">
+			<TextView
+				android:minWidth="30px"
+				android:minHeight="30px"
+				android:id="@+id/textView1"
+				android:layout_weight="0.25" />
+			<TextView
+				android:minWidth="30px"
+				android:minHeight="30px"
+				android:layout_weight="0.25"
+				android:id="@+id/svUpvote"
+				android:text="0"
+				android:gravity="center|center_horizontal|center_vertical"
+				android:textColor="#ff25ff00"
+				android:clickable="true"/>
+			<TextView
+				android:minWidth="30px"
+				android:minHeight="30px"
+				android:layout_weight="0.25"
+				android:id="@+id/svDownvote"
+				android:text="0"
+				android:gravity="center|center_horizontal|center_vertical"
+				android:textColor="#ffff0000"
+				android:clickable="true" />
+			<TextView
+				android:minWidth="30px"
+				android:minHeight="30px"
+				android:layout_weight="0.25"
+				android:id="@+id/textView3" />
+		</TableRow>
+	</TableLayout>
+	<LinearLayout
+		android:orientation="vertical"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:id="@+id/linearLayout3"
+		android:gravity="bottom|center">
+		<TextView
+			android:text="You can click on agree or diagree to have your say"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/textView4"
+			android:gravity="center"
+			android:textStyle="italic" />
+		<Button
+			android:text="Return"
+			android:layout_width="200dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/backbutton"
+			android:layout_weight="0"
+			android:backgroundTint="#ff003f47"
+			android:textColor="#ffffffff"
+			android:layout_marginBottom="20px"
+			android:layout_marginTop="20px" />
+	</LinearLayout>
+
+</LinearLayout>
